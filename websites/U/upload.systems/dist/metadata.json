@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.premid.app/metadata/1.7",
+	"author": {
+		"name": "astrid",
+		"id": "852656702037164053"
+	},
+	"service": "upload.systems",
+	"description": {
+		"en": "upload.systems is a ShareX host with over 700 domains on offer."
+	},
+	"url": [
+		"upload.systems",
+		"i.upload.systems"
+	],
+	"version": "1.0.0",
+	"logo": "https://i.imgur.com/32Is8YY.png",
+	"thumbnail": "https://i.imgur.com/E4Saf3Y.png",
+	"color": "#ad6edd",
+	"category": "other",
+	"tags": [
+		"sharex",
+		"host",
+		"image",
+		"upload"
+	],
+	"settings": [
+		{
+			"id": "adminPages",
+			"title": "Hide admin page names",
+			"value": false
+		}
+	]
+}
