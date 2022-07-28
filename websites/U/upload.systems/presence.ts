@@ -144,7 +144,7 @@
 
 			// Information pages
 			case "/notifications": {
-				presenceData.details = "Viewing notifications";
+				presenceData.details = "Viewing their notifications";
 				break;
 			}
 			case "/subscriptions": {
@@ -176,52 +176,9 @@
 		}
 
 		// Admin pages
-		const hideAdmin = await rpc.getSetting<boolean>("adminPages");
-		if (!hideAdmin) {
-			if (path.includes("/admin")) presenceData.details = "On an admin page";
-
-			switch (path) {
-				case "/admin/analytics": {
-					presenceData.state = "Viewing analytics";
-					break;
-				}
-				case "/admin/users": {
-					presenceData.state = "Finding a user";
-					break;
-				}
-				case "/admin/users/all": {
-					presenceData.state = "Viewing all users";
-					break;
-				}
-				case "/admin/comments": {
-					presenceData.state = "Viewing flagged comments";
-					break;
-				}
-				case "/admin/domains": {
-					presenceData.state = "Managing domains";
-					break;
-				}
-				case "/admin/domains/pending": {
-					presenceData.state = "Viewing pending domains";
-					break;
-				}
-				case "/admin/themes": {
-					presenceData.state = "Viewing pending themes";
-					break;
-				}
-				case "/admin/auditlog": {
-					presenceData.state = "Viewing the audit log";
-					break;
-				}
-				case "/admin/reports": {
-					presenceData.state = "Viewing reports";
-					break;
-				}
-			}
-		}
+		if (path.includes("/admin")) presenceData.details = "On an admin page";
 
 		// General things
-
 		if (document.querySelector<HTMLDivElement>(".NotificationBox_box__OkDXu"))
 			presenceData.details = "Viewing their notifications";
 

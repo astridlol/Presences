@@ -22,12 +22,5 @@
 		"host",
 		"image",
 		"upload"
-	],
-	"settings": [
-		{
-			"id": "adminPages",
-			"title": "Hide admin page names",
-			"value": false
-		}
 	]
 }
